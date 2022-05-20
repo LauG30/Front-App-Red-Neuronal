@@ -1,0 +1,78 @@
+<div class="container-machine">
+
+  <div class="centerInput">
+    <input 
+    type="text"
+    value=""
+    autocomplete="off"
+    #consumo (keyup)="keyup(consumo.value, 0 )"
+    placeholder="Consumo"
+    class="text"
+  />
+  </div>
+
+  <div class="centerInput">
+    <div>
+      <span>Inversiones</span>
+    </div>
+    <input 
+    type="text"
+    value=""
+    autocomplete="off"
+    #Inversiones (keyup)="keyup(Inversiones.value, 1)"
+    placeholder="Inversiones"
+    class="text"
+  />
+  </div>
+  <div class="centerInput">
+    <div>
+      <span>EXPORTACIONES</span>
+    </div>
+    <input 
+    type="text"
+    value=""
+    autocomplete="off"
+    #EXPORTACIONES (keyup)="keyup(EXPORTACIONES.value, 2)"
+    placeholder="Exportaciones"
+    class="text"
+  />
+  </div>
+  <div class="centerInput">
+    <div>
+      <span>IMPORTACIONES</span>
+    </div>
+    <input 
+    type="text"
+    value=""
+    autocomplete="off"
+    #IMPORTACIONES (keyup)="keyup(IMPORTACIONES.value, 3)"
+    placeholder="IMPORTACIONES"
+    class="text"
+  />
+  </div>
+  <div class="centerInput">
+    <div>
+      <span>GASTO PUBLICO</span>
+    </div>
+    <input 
+    type="text"
+    value=""
+    autocomplete="off"
+    #GASTO (keyup)="keyup(GASTO.value, 4)"
+    placeholder="GASTO PUBLICO"
+    class="text"
+  />
+  </div>
+  <div class="container-button">
+    <input type="button" class="button" value="Buscar" (click)="clickItem()">
+  </div>
+  <div class="description-error" *ngIf="machine !== undefined">
+    <span>El pib  aproximado es de {{machine.pib}}</span>
+  </div>
+  <div class="description-error" *ngIf="machine !== undefined">
+    <span> {{machine.message}}</span>
+  </div>
+  <div class="description-error">
+    <span>{{information}}</span>
+  </div>
+</div>
