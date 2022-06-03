@@ -1,6 +1,26 @@
+.tittle{
+  text-align: center;
+  padding-bottom: 200px; 
+  color: rgb(179, 116, 0);
+} 
+
+h2{
+  color: rgb(179, 116, 0);;
+}
+li{
+  font-size: 20px;
+}
 .container-machine {
    width: 100%;
    height: 100%;
+   vertical-align: middle;
+   display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+   background-color:antiquewhite;
+
+   
 
 
    .description-error {
@@ -9,7 +29,7 @@
     text-align: center;
 
     span {
-      color: red;
+      color: blue;
       font-size: 16px;
     }
    }
@@ -36,14 +56,14 @@
      padding-top: 24px;
 
     .button {
-      background-color: #4472C4; /* Green */
+      background-color: rgb(253, 165, 0); /* Green */
       border: none;
-      color: white;
+      color: black;
       padding: 8px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 18px;
       cursor: pointer;
       -webkit-box-shadow: 3px 14px 16px -1px rgba(0,0,0,0.75);
       -moz-box-shadow: 3px 14px 16px -1px rgba(0,0,0,0.75);
@@ -52,8 +72,8 @@
       .text {
         padding-top: 32px;
         span {
-          font-size: 16px;
-          color: white;
+          font-size: 20px;
+          color: gray;
           font-weight: bold;
         }
       }

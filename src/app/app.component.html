@@ -1,5 +1,6 @@
 <div class="container-machine">
-
+  <div class="tittle"><h1>PIB NEURONA</h1></div>
+  
   <div class="centerInput">
     <input 
     type="text"
@@ -66,6 +67,7 @@
   <div class="container-button">
     <input type="button" class="button" value="Buscar" (click)="clickItem()">
   </div>
+  
   <div class="description-error" *ngIf="machine !== undefined">
     <span>El pib  aproximado es de {{machine.pib}}</span>
   </div>
@@ -75,4 +77,12 @@
   <div class="description-error">
     <span>{{information}}</span>
   </div>
+</div>
+<div ><h2>Realizado por:</h2>
+  <ul>
+    <li>Laura Garcia</li>
+    <li>Johan Salazar</li>
+    <li>Kevin Pardo</li>
+  </ul>
+
 </div>
